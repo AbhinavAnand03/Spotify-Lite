@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Dosis:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&display=swap");
+body {
+  background-color: #161515;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  font-family: "Bitcount Prop Single", Dosis;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 50px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+navbar {
+  display: flex;
+  position: sticky;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #111;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.brand img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  padding: 100;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-size: 1.2rem;
+  gap: 40px;
+  cursor: pointer;
+}
+
+.container {
+  min-height: 20vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  margin: 23px auto;
+  width: 70%;
+  border-radius: 12px;
+  padding: 34px;
+  background-image: url("bg.jpg");
+}
+search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 20px;
+}
+search.input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 300px;
+}
+
+.brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.input {
+  width: 200px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-container {
+  display: sticky;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  position: right;
+  background-color: #1e1e1e;
+  border-radius: 25px;
+  padding: 8px 15px;
+  width: 400px;
+}
+
+.search-box input {
+  background: none;
+  border: none;
+  color: #ccc;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+}
+
+.search-icon,
+.library-icon {
+  color: #1a1919;
+  margin-right: 10px;
+}
+
+.search-icon:hover,
+.library-icon:hover,
+.home-icon:hover {
+  color: #fff;
+}
+profile-icon {
+  gap: 50px;
+  text-align: right;
+}
+.bottom {
+  position: sticky;
+  bottom: 0;
+  height: 100px;
+  background-color: #111;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.notification {
+  gap: 10px;
+  text-align: right;
+}
+
+.icons-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.icons {
+  margin-top: 14px;
+  cursor: pointer;
+}
+#volumeBar {
+  width: auto;
+  text-align: center;
+  cursor: pointer;
+}
+#myProgressBar {
+  width: 70vw;
+  text-align: center;
+  cursor: pointer;
+}
+.songItemContainer {
+  margin-top: 20px;
+}
+.songItem {
+  display: flex;
+  background-color: #1e1e1e;
+  width: 80%;
+  height: 50px;
+  margin: 12px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+.songItem img {
+  width: 43px;
+  margin: 23px 0;
+}
+.timestamp {
+  margin: 0 23px;
+  cursor: pointer;
+  align-items: center;
+}
+.songInfo {
+  position: absolute;
+  left: 10vw;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+}
+.songInfo #gif {
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+.volume {
+  position: absolute;
+  right: 10vw;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.notification-count {
+  position: fixed;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  gap: 10px;
+}
+.notification {
+  position: relative;
+  display: inline-block;
+}
+
+.bell-icon {
+  font-size: 60px; /* adjust size as needed */
+  color: #fbc02d; /* yellow bell color */
+}
+
+.badge {
+  position: absolute;
+  top: 0; /* aligns badge to top */
+  right: 0; /* aligns badge to right */
+  background: #e53935; /* red color */
+  color: white;
+  border-radius: 50%;
+  padding: 4px 8px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1;
+}

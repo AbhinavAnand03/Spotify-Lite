@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Your favorite music</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="logo.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="brand">
+          <img src="logo.jpg" alt="Spotify" width="50" height="50" />Spotify
+        </li>
+        <li>Home</li>
+        <li>Your Library</li>
+        <li>About</li>
+        <li class="notification">
+          <i class="bell-icon"></i>
+          <span class="badge">2</span>
+          <img
+            src="notification.webp"
+            alt="Notification"
+            width="50"
+            height="60"
+          />
+        </li>
+        <li class="search">
+          <div class="search-container">
+            <div class="search-box">
+              <img src="search.webp" alt="Search" width="20" height="20" />
+              <input type="text" placeholder="What do you want to play?" />
+            </div>
+          </div>
+        </li>
+        <li>Profile</li>
+        <li class="login">Login</li>
+        <li>Sign Up</li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="songList">
+        <h1>Best Songs- No Copyright sounds</h1>
+        <div class="songItemContainer">
+          <div class="songItem">
+            <img src="album1.jpeg" alt="Song 1" />
+            <span>BEANIE</span>
+            <span class="songListPlay"
+              ><span class="timestamp"
+                >2:27<i class="fa-2x fa-solid fa-play"></i></span
+            ></span>
+          </div>
+          <div class="songItem">
+            <img src="album2.jpeg" alt="Song 1" />
+            <span>AASHIQUI 2 </span>
+            <span class="songListPlay"
+              ><span class="timestamp"
+                >4:21<i class="fa-2x fa-solid fa-play"></i></span
+            ></span>
+          </div>
+          <div class="songItem">
+            <img src="album3.jpeg" alt="1" />
+            <span>ISHQE DI LAT </span>
+            <span class="songListPlay"
+              ><span class="timestamp"
+                >4:40<i class="fa-2x fa-solid fa-play"></i></span
+            ></span>
+          </div>
+          <div class="songItem">
+            <img src="album4.jpeg" alt="1" />
+            <span> LOVE STORY </span>
+            <span class="songListPlay"
+              ><span class="timestamp"
+                >2:27<i class="fa-2x fa-solid fa-play"></i></span
+            ></span>
+          </div>
+          <div class="songItem">
+            <img src="album5.jpeg" alt="1" />
+            <span>Krishna Theme</span>
+            <span class="songListPlay"
+              ><span class="timestamp"
+                >2:27<i class="fa-2x fa-solid fa-play"></i></span
+            ></span>
+          </div>
+          <div class="songItem">
+            <img src="album6.jpeg" alt="1" />
+            <span>Piya Ghar Aavenge</span>
+            <span class="songListPlay"
+              ><span class="timestamp"
+                >2:27<i class="fa-2x fa-solid fa-play"></i></span
+            ></span>
+          </div>
+        </div>
+      </div>
+      <div class="songBanner"></div>
+    </div>
+    <div class="bottom">
+      <input type="range" name="range" min="0" max="100" id="myProgressBar" />
+      <div class="icons">
+        <!-- font awesome icons -->
+        <i class="fa-2x fa-solid fa-backward" id="previous"></i>
+        <i class="fa-2x fa-solid fa-play" id="masterPlay"></i>
+        <i class="fa-2x fa-solid fa-forward" id="next"></i>
+      </div>
+      <div class="songInfo">
+        <img
+          id="coverImage"
+          src="album1.jpeg"
+          alt="Album Cover"
+          width="60"
+          height="60"
+          style="border-radius: 4px; object-fit: cover"
+        />
+        <img src="music.gif" width="42px" alt="Playing" id="gif" />
+        <span id="masterSongName">BEANIE - Lauren Nicole, Groovy Chick</span>
+      </div>
+      <!-- Volume Control -->
+      <div class="volume">
+        <img src="volume.webp" alt="Volume" width="30" height="30" />
+        <input type="range" name="volume" min="0" max="100" id="volumeBar" />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
